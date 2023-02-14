@@ -100,7 +100,7 @@
          Serial.println(" CAMBIADA"); // imprime en el monitor serial que cambió la clave
          for (int i = 0; i < 5; i++) { //Se crea for para recorrer cada espacio de almacenamiento en eeprom y en array
           EEPROM.write(i, CLAVE_MAESTRA[i]); //Se escribe en cada espacio de la memoria la clave
-          delay (250);
+          delay (250);    //delay para que termine de guardar satisfactoriamente la clave en eeprom
                            }
                       }
                       
